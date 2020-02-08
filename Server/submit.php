@@ -1,7 +1,7 @@
 <?php
 
 $servername = "localhost";
-$username = "root";
+$username = "fpm";
 $password = "";
 
 // Create connection
@@ -12,5 +12,3 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully";
-
-return "Cool";
