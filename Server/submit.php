@@ -1,8 +1,8 @@
 <?php
 
-$servername = "usdentalpractices.com";
-$username = "admin";
-$password = "A4QKTg@PLEtqu$FUzK8s8wgws#dWXr";
+$servername = "localhost";
+$username = "root";
+$password = "";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
